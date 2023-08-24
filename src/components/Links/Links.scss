@@ -1,0 +1,10 @@
+@import "../../scss/index.scss";
+.links {
+  display: flex;
+  gap: 63px;
+  padding-left: 0;
+  text-align: end;
+  .links__link {
+    @include text-hover($gray-white);
+  }
+}

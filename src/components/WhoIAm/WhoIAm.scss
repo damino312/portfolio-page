@@ -1,0 +1,31 @@
+@import "../../scss/index.scss";
+
+.whoIAm {
+  margin-top: 120px;
+  .whoIAm__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__text {
+    font-size: 50px;
+    display: block;
+  }
+  &__text:nth-child(3) {
+    display: inline;
+  }
+
+  &__photo-container {
+    border-radius: 100%;
+    background: linear-gradient(90deg, #00ccff, #ff009d);
+    background-size: 300% 300%;
+    animation: anim-gradient 8s ease infinite;
+    display: flex;
+  }
+  &__photo {
+    padding: 5px;
+    border-radius: 100%;
+    max-width: 350px;
+  }
+}

@@ -1,0 +1,59 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "DM Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.active {
+  animation: shaking 1s ease;
+}
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  max-width: 1240px;
+  padding: 0 15px 0 15px;
+  margin: 0 auto;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #00ccff, #ff009d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text--gray {
+  color: #a7a7a7;
+}
+
+.text--gray-white {
+  color: #cccccc;
+}
+
+.block {
+  display: block;
+}
+
+.element-show {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 3s ease, transform 1.4s ease;
+}

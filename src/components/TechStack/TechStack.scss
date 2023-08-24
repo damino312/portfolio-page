@@ -1,0 +1,33 @@
+@import "/src/scss/index.scss";
+.techStack {
+  margin-top: 120px;
+  opacity: 0;
+  transform: translateX(-100%);
+  &__title {
+    margin-bottom: 5px;
+    font-size: 44px;
+    text-align: center;
+  }
+  &__text {
+    margin: 0;
+    font-size: 28px;
+    text-align: center;
+  }
+  &__technologies {
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    row-gap: 30px;
+  }
+  svg {
+    justify-self: center;
+    transition: 0.8s;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.4);
+
+      filter: drop-shadow(0px 0px 10px white);
+    }
+  }
+}

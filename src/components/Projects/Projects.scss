@@ -1,0 +1,22 @@
+.projects {
+  opacity: 0;
+  transform: translateY(200px);
+  &__wrapper {
+  }
+  &__title {
+    margin-bottom: 5px;
+    font-size: 44px;
+
+    text-align: center;
+  }
+  &__text {
+    margin: 0;
+    font-size: 28px;
+    text-align: center;
+  }
+  &__my-projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+}

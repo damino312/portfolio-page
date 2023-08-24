@@ -1,0 +1,65 @@
+@import "../../scss/index.scss";
+.project {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  max-width: 375px;
+  border-radius: 16px;
+  overflow: hidden;
+  &__img-container {
+    overflow: hidden;
+  }
+  &__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: 0.8s ease;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  &__info {
+    background: #363636;
+    padding-bottom: 15px;
+    padding-inline: 30px;
+  }
+  &__title {
+    margin: 0;
+    padding-top: 26px;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+  }
+  &__description {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  &__technologies {
+    font-size: 14px;
+    font-weight: 200;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+  &__link {
+    text-decoration: underline;
+
+    &:hover {
+      @include text-gradient;
+    }
+
+    &:first-child:before {
+      content: url("../../../public/btn-live.svg");
+      display: inline-block;
+      transform: translate(-10px, 5px);
+    }
+    &:last-child:before {
+      content: url("../../../public/btn-git.svg");
+      display: inline-block;
+      transform: translate(-10px, 5px);
+    }
+  }
+}

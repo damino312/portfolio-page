@@ -1,0 +1,65 @@
+@import "../../scss/index.scss";
+.template {
+  margin-top: 40px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $gray;
+  &__left {
+  }
+  &__title {
+    margin: 0 0 15px 0;
+    color: $gray;
+    font-size: 22px;
+    font-weight: 300;
+  }
+  &__place {
+    margin: 0;
+    color: $gray;
+    &:before {
+      content: url("../../../public/about_place.svg");
+      margin-right: 10px;
+    }
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__time-block {
+    align-self: flex-end;
+    border-radius: 30px;
+    width: 120px;
+
+    background: #42446e;
+    text-align: center;
+    padding: 5px 6px;
+    color: $gray;
+    display: block;
+  }
+  &__time {
+    display: inline-block;
+  }
+  &__term {
+    text-align: right;
+    font-size: 14px;
+    color: $gray;
+    &:before {
+      content: url("../../../public/about_time.svg");
+      margin-right: 10px;
+    }
+  }
+}
+
+.about {
+  padding-bottom: 80px;
+  &__wrapper {
+  }
+  &__title {
+    font-size: 36px;
+    color: $gray-white;
+  }
+  &__text {
+    color: $gray;
+  }
+}

@@ -1,0 +1,12 @@
+@mixin text-hover($color) {
+  transition: 0.3s ease;
+  &:hover {
+    color: $color;
+  }
+}
+
+@mixin text-gradient() {
+  background: linear-gradient(90deg, #00ccff, #ff009d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

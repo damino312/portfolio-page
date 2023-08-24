@@ -1,0 +1,21 @@
+.header {
+  padding-top: 10px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+  }
+  &__logo {
+    font-size: 20px;
+    font-weight: 700;
+    flex: 1;
+  }
+}
+
+.socials {
+  max-width: 300px;
+  display: flex;
+  gap: 6px;
+}
