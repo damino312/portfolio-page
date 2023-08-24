@@ -17,7 +17,7 @@
     margin: 0;
     color: $gray;
     &:before {
-      content: url("../../../public/about_place.svg");
+      content: url("/about_place.svg");
       margin-right: 10px;
     }
   }
@@ -45,7 +45,7 @@
     font-size: 14px;
     color: $gray;
     &:before {
-      content: url("../../../public/about_time.svg");
+      content: url("/about_time.svg");
       margin-right: 10px;
     }
   }
