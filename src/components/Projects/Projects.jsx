@@ -12,7 +12,7 @@ export default function Projects() {
         " Airbnb (ABNB) is an online marketplace that connects people who want to rent out their homes with people who are looking for accommodations in specific locales."
       }
       stack={"Express, React, MongoDB, Tailwind"}
-      imgPath={"/public/airbnb.jpg"}
+      imgPath={"/airbnb.jpg"}
       linkToLive={"http://45.87.247.130/"}
       linkToCode={"https://github.com/damino312/aribnb-front"}
     />

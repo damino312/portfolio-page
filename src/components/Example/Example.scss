@@ -52,12 +52,12 @@
     }
 
     &:first-child:before {
-      content: url("../../../public/btn-live.svg");
+      content: url("/btn-live.svg");
       display: inline-block;
       transform: translate(-10px, 5px);
     }
     &:last-child:before {
-      content: url("../../../public/btn-git.svg");
+      content: url("/public/btn-git.svg");
       display: inline-block;
       transform: translate(-10px, 5px);
     }

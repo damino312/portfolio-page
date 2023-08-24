@@ -15,7 +15,7 @@ export default function WhoIAm() {
         <div className="whoIAm__right">
           <div className="whoIAm__photo-container">
             <img
-              src="../../../public/my_photo.jpg"
+              src="/my_photo.jpg"
               alt="Here is supposed to be my photo"
               className="whoIAm__photo"
             />
