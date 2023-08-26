@@ -12,7 +12,7 @@ export default function Example({
   return (
     <div className="project">
       <div className="project__img-container">
-        <a href="">
+        <a href={linkToLive}>
           <img src={imgPath} alt="" className="project__img" />
         </a>
       </div>

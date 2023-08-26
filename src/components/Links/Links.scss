@@ -1,10 +1,12 @@
-@import "../../scss/index.scss";
+@use "/src/scss/var" as *;
+@use "/src/scss/mixin" as *;
 .links {
   display: flex;
   gap: 63px;
   padding-left: 0;
   text-align: end;
   .links__link {
+    color: $gray;
     @include text-hover($gray-white);
   }
 }

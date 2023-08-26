@@ -1,4 +1,5 @@
-@import "../../scss/index.scss";
+@use "/src/scss/var" as *;
+
 .top-to-btm {
   position: relative;
 }

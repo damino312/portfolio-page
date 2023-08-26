@@ -1,4 +1,5 @@
-@import "../../scss/index.scss";
+@use "/src/scss/var" as *;
+
 .template {
   margin-top: 40px;
   padding-bottom: 20px;

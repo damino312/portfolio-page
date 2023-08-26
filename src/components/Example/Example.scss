@@ -1,4 +1,4 @@
-@import "../../scss/index.scss";
+@use "/src/scss/mixin" as *;
 .project {
   margin-top: 100px;
   margin-bottom: 50px;
