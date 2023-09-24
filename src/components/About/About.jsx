@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.scss";
+import { motion } from "framer-motion";
 
 export default function About() {
   const template = (name, time, place, term) => {
@@ -17,7 +18,12 @@ export default function About() {
     );
   };
   return (
-    <section className="about">
+    <motion.section
+      initial={{ x: "-100%" }}
+      animate={{ x: 0 }}
+      exit={{ x: "100%" }}
+      className="about"
+    >
       <div className="wrapper about__wrapper">
         <h2 className="about__title">About me</h2>
         <p className="about__text">
@@ -48,6 +54,6 @@ export default function About() {
           "Sep 2023  -  Current Time"
         )}
       </div>
-    </section>
+    </motion.section>
   );
 }

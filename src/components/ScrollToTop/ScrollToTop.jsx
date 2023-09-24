@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaAngleUp } from "react-icons/fa";
+import { motion, AnimatePresence } from "framer-motion";
 import "./ScrollToTop.scss";
 
 export default function ScrollToTop() {
@@ -23,9 +24,18 @@ export default function ScrollToTop() {
 
   return (
     <div className="top-to-btm">
-      {showTopBtn && (
-        <FaAngleUp className="icon-position icon-style" onClick={goToTop} />
-      )}
+      <AnimatePresence>
+        {showTopBtn && (
+          <motion.div
+            initial={{ x: 200 }}
+            animate={{ x: 0 }}
+            exit={{ x: 200 }}
+            className="icon-position"
+          >
+            <FaAngleUp className=" icon-style" onClick={goToTop} />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

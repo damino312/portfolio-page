@@ -1,9 +1,16 @@
 import React from "react";
 import "./Contact.scss";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
-    <section className="contact">
+    <motion.section
+      initial={{ x: "-100%" }}
+      animate={{ x: 0 }}
+      exit={{ x: "100%" }}
+      className="contact"
+    >
+      {" "}
       <div className="wrapper contact-wrapper">
         <h2 className="contact__title">For any questions please text me:</h2>
         <div className="contact__links">
@@ -15,6 +22,6 @@ export default function Contact() {
           </a>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
