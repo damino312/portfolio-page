@@ -6,8 +6,6 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid $gray;
-  &__left {
-  }
   &__title {
     margin: 0 0 15px 0;
     color: $gray;
@@ -61,6 +59,7 @@
     color: $gray-white;
   }
   &__text {
+    text-indent: 40px;
     color: $gray;
   }
 }

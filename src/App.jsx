@@ -9,7 +9,7 @@ import { AnimatePresence } from "framer-motion";
 function App() {
   const location = useLocation();
   return (
-    <AnimatePresence mode="wait">
+    <AnimatePresence mode="wait" initial={false}>
       <Routes location={location} key={location.key}>
         <Route path="/" element={<Layout />}>
           <Route index element={<IndexPage />} />

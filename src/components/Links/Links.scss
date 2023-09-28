@@ -7,6 +7,5 @@
   text-align: end;
   .links__link {
     color: $gray;
-    @include text-hover($gray-white);
   }
 }

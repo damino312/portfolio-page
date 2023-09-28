@@ -1,10 +1,11 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./Socials.scss";
 
 export default function Socials() {
   return (
     <div className="socials">
-      <a href="https://github.com/damino312" className="socials__link">
+      <motion.a href="https://github.com/damino312" whileHover={{ scale: 1.3 }}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           data-name="Layer 1"
@@ -18,8 +19,8 @@ export default function Socials() {
             fill="#a7a7a7"
           ></path>
         </svg>
-      </a>
-      <a href="https://t.me/damino312" className="socials__link">
+      </motion.a>
+      <motion.a href="https://t.me/damino312" whileHover={{ scale: 1.3 }}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           data-name="Layer 1"
@@ -33,7 +34,7 @@ export default function Socials() {
             fill="#a7a7a7"
           ></path>
         </svg>
-      </a>
+      </motion.a>
     </div>
   );
 }

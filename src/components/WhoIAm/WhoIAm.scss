@@ -24,6 +24,8 @@
   &__photo {
     padding: 5px;
     border-radius: 100%;
-    max-width: 350px;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
   }
 }

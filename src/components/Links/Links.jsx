@@ -8,40 +8,51 @@ export default function Links() {
   const name = pathname.split("/")?.[1];
 
   const checkActive = (type) => {
+    if (pathname === "/" && type === "home") return "text-gradient";
     if (type == name) return "text-gradient";
     return "";
   };
 
+  const variants = {
+    hover: { scale: 1.4 },
+  };
+
   return (
     <ul className="links text--gray">
-      <li
+      <motion.li
         className={"links__link " + checkActive("home")}
-        key="dsadasdasjiodjasda"
+        variants={variants}
+        whileHover="hover"
+        key="home1"
       >
-        <Link to={"/"}>Home</Link>
-      </li>
+        <Link className="" to={"/"}>
+          Home
+        </Link>
+      </motion.li>
 
-      <li
+      <motion.li
         className={"links__link " + checkActive("about")}
-        key="1231232133dasdsa"
+        variants={variants}
+        whileHover="hover"
+        key="about2"
       >
         <Link to={"/about"}>About</Link>
-      </li>
+      </motion.li>
 
-      <li
+      <motion.li
         className={"links__link " + checkActive("contact")}
-        key="dsadasd1dsadas"
+        variants={variants}
+        whileHover="hover"
+        key="contact3"
       >
         <Link to={"/contact"}>Contacts</Link>
-      </li>
+      </motion.li>
 
       {pathname.length === 1 && (
         <motion.li
           className="links__link"
-          key="modal"
-          initial={{ y: -100 }}
-          animate={{ y: 0 }}
-          exit={{ y: -100 }}
+          variants={variants}
+          whileHover="hover"
         >
           <a href="#stack-anchor">Tech Stack</a>
         </motion.li>
@@ -50,10 +61,8 @@ export default function Links() {
       {pathname.length === 1 && (
         <motion.li
           className="links__link"
-          key={pathname}
-          initial={{ y: -100 }}
-          animate={{ y: 0 }}
-          exit={{ y: -100 }}
+          variants={variants}
+          whileHover="hover"
         >
           <a href="#project-anchor">Projects</a>
         </motion.li>
