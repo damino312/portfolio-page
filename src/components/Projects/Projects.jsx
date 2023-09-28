@@ -25,7 +25,7 @@ export default function Projects() {
             name="Simple chat"
             description="The Simple Web Chat project is a user-friendly web application designed to facilitate real-time text communication between individuals. This minimalistic chat platform is aimed at providing an intuitive and hassle-free way for users to engage in conversations in small organizations."
             stack={"Express, React, WebSocket, Framer Motion, Tailwind"}
-            imgPath="/chat.jpg"
+            imgPath="/portfolio-page/chat.jpg"
             linkToLive={"http://79.133.181.39/"}
             linkToCode={"https://github.com/damino312/chat-client"}
           />
@@ -33,7 +33,7 @@ export default function Projects() {
             name="ECommerce layout"
             description="This project presents the layout design for a single-page application tailored for wilderness enthusiasts and travelers exploring remote and scenic destinations. "
             stack="Vanilla JS, Vanilla HTML, SASS, BEM, Gulp"
-            imgPath="/layout.png"
+            imgPath="/portfolio-page/layout.png"
             linkToLive={"https://damino312.github.io/Ecommerce-layout-/"}
             linkToCode={"https://github.com/damino312/Ecommerce-layout-"}
           />
