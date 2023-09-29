@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
 import "./Links.scss";
 
 export default function Links() {
@@ -18,7 +19,7 @@ export default function Links() {
 
   return (
     <ul className="links text--gray">
-      <li
+      <motion.li
         className={checkActive("home")}
         variants={variants}
         whileHover="hover"
@@ -27,20 +28,20 @@ export default function Links() {
         <Link className="links__link" to={"/"}>
           Home
         </Link>
-      </li>
+      </motion.li>
 
-      <li
+      <motion.li
         className={checkActive("about")}
         variants={variants}
         whileHover="hover"
         key="about2"
       >
         <Link to={"/about"} className="links__link">
-          About
+          About me
         </Link>
-      </li>
+      </motion.li>
 
-      <li
+      <motion.li
         className={checkActive("contact")}
         variants={variants}
         whileHover="hover"
@@ -49,22 +50,26 @@ export default function Links() {
         <Link className="links__link" to={"/contact"}>
           Contacts
         </Link>
-      </li>
+      </motion.li>
 
       {pathname.length === 1 && (
-        <li variants={variants} whileHover="hover">
+        <motion.li variants={variants} whileHover="hover">
           <a href="#stack-anchor" className="links__link">
             Tech Stack
           </a>
-        </li>
+        </motion.li>
       )}
 
       {pathname.length === 1 && (
-        <li className="links__link" variants={variants} whileHover="hover">
+        <motion.li
+          className="links__link"
+          variants={variants}
+          whileHover="hover"
+        >
           <a href="#project-anchor" className="links__link">
             Projects
           </a>
-        </li>
+        </motion.li>
       )}
     </ul>
   );

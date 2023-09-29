@@ -16,11 +16,17 @@ a {
 }
 
 a:visited {
-  color: inherit !important;
+  // color: inherit !important;
 }
 
 ul {
   list-style: none;
+}
+
+.btn {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
 }
 
 .active {

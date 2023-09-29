@@ -1,10 +1,6 @@
 @use "/src/scss/mixin" as *;
 .project {
-  margin-top: 100px;
-  margin-bottom: 50px;
   max-width: 375px;
-
-  // border-radius: 16px;
   overflow: hidden;
   &__img-container {
     border-radius: 16px 16px 0 0;

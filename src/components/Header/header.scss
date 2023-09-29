@@ -19,3 +19,9 @@
   display: flex;
   gap: 6px;
 }
+
+@media only screen and (max-width: 960px) {
+  .header__logo {
+    display: none;
+  }
+}

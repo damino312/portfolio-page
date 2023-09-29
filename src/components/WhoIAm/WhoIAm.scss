@@ -1,13 +1,18 @@
+@use "/src/scss/var" as *;
 .whoIAm {
-  margin-top: 120px;
-  .whoIAm__wrapper {
+  margin-top: $paddingForPc;
+  &__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
+  &__left {
+    margin-top: 0;
+    font-size: clamp(1.875rem, 0.7031rem + 3.125vw, 3.125rem);
+  }
+
   &__text {
-    font-size: 50px;
     display: block;
   }
   &__text:nth-child(3) {
@@ -19,7 +24,12 @@
     background: linear-gradient(90deg, #00ccff, #ff009d);
     background-size: 300% 300%;
     animation: anim-gradient 8s ease infinite;
+    display: inline-flex;
+  }
+  &__right {
     display: flex;
+    justify-content: center;
+    flex-grow: 1;
   }
   &__photo {
     padding: 5px;
@@ -27,5 +37,32 @@
     width: 350px;
     height: 350px;
     object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .whoIAm {
+    margin-top: $paddingForTablet;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .whoIAm {
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__left {
+      font-size: clamp(2.125rem, 1.5507rem + 2.7027vw, 2.75rem);
+    }
+    &__photo {
+      width: 300px;
+      height: 300px;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .whoIAm {
+    margin-top: $paddingForPhone;
   }
 }

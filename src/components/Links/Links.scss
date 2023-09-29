@@ -1,11 +1,21 @@
 @use "/src/scss/var" as *;
-@use "/src/scss/mixin" as *;
 .links {
   display: flex;
-  gap: 63px;
+  gap: 62px;
   padding-left: 0;
   text-align: end;
   .links__link {
     color: $gray;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .links {
+    gap: 25px;
+  }
+}
+@media only screen and (max-width: 686px) {
+  .links {
+    display: none;
   }
 }

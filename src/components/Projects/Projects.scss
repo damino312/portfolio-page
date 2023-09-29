@@ -1,22 +1,55 @@
+@use "/src/scss/var" as *;
 .projects {
   opacity: 0;
   transform: translateY(200px);
-  &__wrapper {
-  }
+  margin-top: $paddingForPc;
+
+  // max-width: 375px;
   &__title {
     margin-bottom: 5px;
-    font-size: 44px;
+    font-size: clamp(2.125rem, 1.8889rem + 1.1111vw, 2.75rem);
 
     text-align: center;
   }
   &__text {
     margin: 0;
-    font-size: 28px;
+    font-size: clamp(1.25rem, 1.0611rem + 0.8889vw, 1.75rem);
     text-align: center;
   }
   &__my-projects {
+    margin-top: $paddingForPc;
+    margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .projects {
+    margin-top: $paddingForTablet;
+    &__my-projects {
+      margin-top: $paddingForTablet;
+      row-gap: 30px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .projects {
+    &__my-projects {
+      justify-items: center;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .projects {
+    margin-top: $paddingForPhone;
+    &__my-projects {
+      margin-top: $paddingForPhone;
+    }
   }
 }

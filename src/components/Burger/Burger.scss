@@ -1,0 +1,50 @@
+.burger {
+  display: none;
+  &__svg {
+    height: 40px;
+    width: 40px;
+  }
+  &__wrapper {
+    z-index: 5;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(201, 186, 73);
+    transform-origin: top;
+  }
+  &__close-btn {
+    align-self: flex-start;
+    color: black;
+  }
+  &__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    &-container {
+      display: block;
+      overflow: hidden;
+    }
+    &-item {
+      color: black;
+      font-size: 34px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 686px) {
+  .burger {
+    display: block;
+  }
+}

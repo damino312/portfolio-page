@@ -18,7 +18,9 @@ export default function Footer() {
           >
             daminionq@gmail.com
           </a>
-          <Socials />
+          <div className="footer__socials">
+            <Socials />
+          </div>
         </div>
         <div className="footer__bottom">
           <Links />

@@ -9,19 +9,31 @@
   &__title {
     text-align: center;
     color: $gray-white;
-    font-size: 42px;
+    font-size: clamp(30px, 4vw, 42px);
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-around;
   }
 
   &__link {
     display: block;
     text-align: center;
     font-weight: 700;
-    font-size: 24px;
+    font-size: clamp(16px, 4vw, 24px);
     @include text-gradient();
   }
+}
 
-  &__links {
-    display: flex;
-    justify-content: space-around;
+@media only screen and (max-width: 590px) {
+  .contact {
+    &__links {
+      flex-direction: column;
+    }
+    &__link {
+      margin-bottom: 20px;
+      font-size: 22px;
+    }
   }
 }
