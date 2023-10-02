@@ -19,6 +19,9 @@
     background-color: rgb(201, 186, 73);
     transform-origin: top;
   }
+  &__open-btn {
+    color: white;
+  }
   &__close-btn {
     align-self: flex-start;
     color: black;
