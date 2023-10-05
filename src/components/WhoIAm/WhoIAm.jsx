@@ -27,7 +27,7 @@ export default function WhoIAm() {
         <motion.a
           className="whoIAm__cv"
           target="_blank"
-          href="https://drive.google.com/file/d/1n41_vfWAyep3jNM7XgA9DIECFo6oiNeH/view?usp=sharing"
+          href="https://drive.google.com/file/d/11GECcEX6PFevTvmKTu5fZr2ORhMTNW5r/view?usp=sharing"
           whileHover={{ scale: 1.3, originX: 0 }}
         >
           &gt; Download my cv
