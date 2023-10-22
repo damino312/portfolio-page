@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import "./TechStack.scss";
 
 export default function TechStack() {
+  const { t } = useTranslation();
   const addClickListeners = () => {
     const svgs = document.querySelectorAll(".techStack__technologies svg");
     svgs.forEach((svg) => {
@@ -23,10 +25,8 @@ export default function TechStack() {
   return (
     <section className="techStack scroll-animation" id="stack-anchor">
       <div className="wrapper techStack__wrapper">
-        <h2 className="techStack__title text--gray-white">My Tech Stack</h2>
-        <p className="techStack__text text--gray">
-          Technologies I&apos;ve been working with
-        </p>
+        <h2 className="techStack__title text--gray-white">{t("title_tech")}</h2>
+        <p className="techStack__text text--gray">{t("line_tech")}</p>
         <div className="techStack__technologies">
           <svg
             width="120"

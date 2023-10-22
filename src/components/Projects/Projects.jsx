@@ -1,21 +1,21 @@
 import React from "react";
 import "./Projects.scss";
+import { useTranslation } from "react-i18next";
 import Example from "../Example/Example";
 
 export default function Projects() {
+  const { t } = useTranslation();
   return (
     <section className="projects scroll-animation" id="project-anchor">
       <div className="wrapper projects-wrapper">
-        <h2 className="projects__title text--gray-white">Projects</h2>
-        <p className="projects__text text--gray">
-          Things I&apos;ve built so far
-        </p>
+        <h2 className="projects__title text--gray-white">
+          {t("title_project")}
+        </h2>
+        <p className="projects__text text--gray">{t("line_project")}</p>
         <div className="projects__my-projects">
           <Example
             name={"Airbnb"}
-            description={
-              " Airbnb (ABNB) is an online marketplace that connects people who want to rent out their homes with people who are looking for accommodations in specific locales."
-            }
+            description={t("airbnb_project")}
             stack={"Express, React, MongoDB, Tailwind"}
             imgPath={"/portfolio-page/airbnb.jpg"}
             linkToLive={"http://45.87.247.130/"}
@@ -23,7 +23,7 @@ export default function Projects() {
           />
           <Example
             name="Simple chat"
-            description="The Simple Web Chat project is a user-friendly web application designed to facilitate real-time text communication between individuals. This minimalistic chat platform is aimed at providing an intuitive and hassle-free way for users to engage in conversations in small organizations."
+            description={t("chat_project")}
             stack={"Express, React, WebSocket, Framer Motion, Tailwind"}
             imgPath="/portfolio-page/chat.jpg"
             linkToLive={"http://79.133.181.39/"}
@@ -31,7 +31,7 @@ export default function Projects() {
           />
           <Example
             name="ECommerce layout"
-            description="This project presents the layout design for a single-page application tailored for wilderness enthusiasts and travelers exploring remote and scenic destinations. "
+            description={t("ecom_project")}
             stack="Vanilla JS, Vanilla HTML, SASS, BEM, Gulp"
             imgPath="/portfolio-page/layout.png"
             linkToLive={"https://damino312.github.io/Ecommerce-layout-/"}
