@@ -46,7 +46,7 @@ export default function Example({
           layout="position"
           transition={{ duration: 0.4 }}
         >
-          {isLimited ? description.substring(0, 163) : description}
+          {isLimited ? description.substring(0, 163) : description + " "}
           {isExceeded && (
             <>
               {isLimited && <span>... </span>}

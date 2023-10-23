@@ -1,8 +1,10 @@
 import React from "react";
 import "./Contact.scss";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
+  const { t } = useTranslation();
   return (
     <motion.section
       initial={{ x: "-100%" }}
@@ -12,7 +14,7 @@ export default function Contact() {
     >
       {" "}
       <div className="wrapper contact-wrapper">
-        <h2 className="contact__title">For any questions please text me:</h2>
+        <h2 className="contact__title">{t("contacts")}</h2>
         <div className="contact__links">
           <a href="https://t.me/damino312" className="contact__link">
             Telegram

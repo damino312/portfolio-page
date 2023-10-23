@@ -21,6 +21,9 @@
 }
 
 @media only screen and (max-width: 960px) {
+  .header__wrapper {
+    gap: 20px;
+  }
   .header__logo {
     display: none;
   }

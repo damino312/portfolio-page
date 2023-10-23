@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import "./Burger.scss";
+import { useTranslation } from "react-i18next";
 
 export default function Burger() {
   const [burgerMenu, setBurgerMenu] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     if (burgerMenu) {
@@ -121,7 +123,7 @@ export default function Burger() {
               onClick={() => setBurgerMenu(false)}
               whileTap={{ scale: 1.4 }}
             >
-              Close
+              {t("burger_close")}
             </motion.button>
             <motion.nav
               variants={containerVars}
@@ -132,17 +134,17 @@ export default function Burger() {
             >
               <BurgerNavItem
                 href="/"
-                linkName="Home"
+                linkName={t("burger_home")}
                 setBurgerMenu={setBurgerMenu}
               />
               <BurgerNavItem
                 href="/about"
-                linkName="About me"
+                linkName={t("burger_aboutMe")}
                 setBurgerMenu={setBurgerMenu}
               />
               <BurgerNavItem
                 href="/contact"
-                linkName="Contacts"
+                linkName={t("burger_contacts")}
                 setBurgerMenu={setBurgerMenu}
               />
             </motion.nav>

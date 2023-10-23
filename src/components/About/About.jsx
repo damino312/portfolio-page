@@ -1,8 +1,10 @@
 import React from "react";
 import "./About.scss";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export default function About() {
+  const { t } = useTranslation();
   const template = (name, time, place, term) => {
     return (
       <div className="template">
@@ -25,48 +27,30 @@ export default function About() {
       className="about"
     >
       <div className="wrapper about__wrapper">
-        <h2 className="about__title">About me</h2>
-        <p className="about__text">
-          Hello, I'm Kirill, and I'm 23 years old. Currently, I'm pursuing a
-          master's degree in Data Management at Reshetnev University. My career
-          aspiration is to grow as a professional in the field of web
-          development, with a particular passion for frontend development. While
-          I also engage in backend development, I find frontend work to be my
-          true calling.
-        </p>
-        <p className="about__text">
-          In addition to my academic pursuits, I've achieved a B2 level of
-          proficiency in English and frequently have spoken practise. This not
-          only enhances my technical skills but also allows me to effectively
-          communicate with fellow developers and clients and learn from various
-          sources.
-        </p>
-        <p className="about__text">
-          I'm enthusiastic about creating beautiful and functional user
-          interfaces, and I'm committed to continually expanding my skills in
-          web development. Welcome to my portfolio, where you can explore some
-          of my projects and witness my journey in the world of web development.
-        </p>
-        <h2 className="about__title">Work Experience</h2>
+        <h2 className="about__title">{t("title1_about")}</h2>
+        <p className="about__text">{t("par1_about")}</p>
+        <p className="about__text">{t("par2_about")}</p>
+        <p className="about__text">{t("par3_about")}</p>
+        <h2 className="about__title">{t("title2_about")}</h2>
         {template(
-          "Electronics Engineer",
-          "Full Time",
-          "Resource and Methodological Center",
-          "Sep 2022  -  Current Time"
+          t("rmc_position"),
+          t("rmc_time"),
+          t("rmc_job"),
+          t("rmc_period")
         )}
 
-        <h2 className="about__title">Education</h2>
+        <h2 className="about__title">{t("title3_about")}</h2>
         {template(
-          "Automated information proccessing and management systems, Bachelor's",
-          "Full Time",
-          "Reshetnev State Siberian University of Science and Technology",
-          "Sep 2018  -  June 2022"
+          t("bach_position"),
+          t("bach_time"),
+          t("bach_uni"),
+          t("bach_period")
         )}
         {template(
-          "Data managment, Master's",
-          "Full Time",
-          "Reshetnev State Siberian University of Science and Technology",
-          "Sep 2023  -  Current Time"
+          t("mast_position"),
+          t("mast_time"),
+          t("mast_uni"),
+          t("mast_period")
         )}
       </div>
     </motion.section>

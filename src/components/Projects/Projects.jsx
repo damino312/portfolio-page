@@ -37,6 +37,14 @@ export default function Projects() {
             linkToLive={"https://damino312.github.io/Ecommerce-layout-/"}
             linkToCode={"https://github.com/damino312/Ecommerce-layout-"}
           />
+          <Example
+            name="Cryptoparser"
+            description={t("ecom_parser")}
+            stack="React, Recharts, Tailwind, ExpressJS, MongoDB, Docker"
+            imgPath="/portfolio-page/parser.png"
+            linkToLive={"http://79.133.181.39:1111"}
+            linkToCode={"https://github.com/damino312/parser"}
+          />
         </div>
       </div>
     </section>
