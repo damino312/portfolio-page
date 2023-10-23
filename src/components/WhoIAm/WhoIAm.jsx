@@ -29,7 +29,7 @@ export default function WhoIAm() {
         <motion.a
           className="whoIAm__cv"
           target="_blank"
-          href="https://drive.google.com/file/d/11GECcEX6PFevTvmKTu5fZr2ORhMTNW5r/view?usp=sharing"
+          href="https://drive.google.com/file/d/1EwN0CN_bxzUmsraNp_26A4pjD7pDFjM9/view?usp=share_link"
           whileHover={{ scale: 1.3, originX: 0 }}
         >
           &gt; {t("linkCv")}
