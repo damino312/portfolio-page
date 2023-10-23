@@ -16,7 +16,7 @@ export default function Projects() {
           <Example
             name={"Airbnb"}
             description={t("airbnb_project")}
-            stack={"Express, React, MongoDB, Tailwind"}
+            stack={"Express, React, MongoDB, Tailwind, Mongoose"}
             imgPath={"/portfolio-page/airbnb.jpg"}
             linkToLive={"http://45.87.247.130/"}
             linkToCode={"https://github.com/damino312/aribnb-front"}
@@ -24,7 +24,9 @@ export default function Projects() {
           <Example
             name="Simple chat"
             description={t("chat_project")}
-            stack={"Express, React, WebSocket, Framer Motion, Tailwind"}
+            stack={
+              "Express, React, WebSocket, Framer Motion, Tailwind, Mongoose"
+            }
             imgPath="/portfolio-page/chat.jpg"
             linkToLive={"http://79.133.181.39/"}
             linkToCode={"https://github.com/damino312/chat-client"}
@@ -40,7 +42,7 @@ export default function Projects() {
           <Example
             name="Cryptoparser"
             description={t("ecom_parser")}
-            stack="React, Recharts, Tailwind, ExpressJS, MongoDB, Docker"
+            stack="React, Recharts, Tailwind, ExpressJS, MongoDB, Docker, Cheerio, Mongoose"
             imgPath="/portfolio-page/parser.png"
             linkToLive={"http://79.133.181.39:1111"}
             linkToCode={"https://github.com/damino312/parser"}
